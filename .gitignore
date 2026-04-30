@@ -1,0 +1,16 @@
+build/
+build-*/
+.qtcreator/
+debug/
+release/
+
+*.exe
+*.o
+*.obj
+*.dll
+*.stash
+*.user
+*.user.*
+
+.DS_Store
+Thumbs.db

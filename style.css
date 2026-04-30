@@ -1,0 +1,140 @@
+body {
+    background-color: #000000;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    height: 90vh;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.box {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.buttons-cell {
+    flex-direction: row;
+    gap: 15px;
+}
+
+.player-cell {
+    background-color: #000000;
+    padding: 7px;
+    overflow: hidden;
+}
+
+.chat-cell {
+    overflow-y: auto;
+}
+
+.queue-cell {
+    grid-column: 2;
+    grid-row: 3;
+    justify-content: flex-start;
+    min-width: 0;
+}
+
+.header, h2, h3 {
+    font-weight: normal;
+    font-family: "Fontdiner Swanky", serif;
+    letter-spacing: 2px;
+    color: #f1f1f1;
+    margin: 0;
+}
+
+.header {
+    grid-column: 1 / -1;
+    font-size: 42px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+button#add-btn {
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    font-family: "Fontdiner Swanky", serif;
+}
+
+button#add-btn:hover { background-color: #cc0000; }
+
+button#skip-btn {
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2793e8;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    font-family: "Fontdiner Swanky", serif;
+}
+
+button#skip-btn:hover { background-color: #1a7bc0; }
+
+#track-list {
+    min-height: 80px;
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: #ff0000 #1a1a1a;
+}
+
+#track-list::-webkit-scrollbar {
+    height: 12px;
+}
+#track-list::-webkit-scrollbar-track {
+    background-color: #1a1a1a;
+    border-radius: 4px;
+}
+#track-list::-webkit-scrollbar-thumb {
+    background-color: #ff0000;
+    border-radius: 4px;
+    border: 3px solid #1a1a1a;
+}
+#track-list::-webkit-scrollbar-thumb:hover {
+    background-color: #cc0000;
+}
