@@ -38,7 +38,7 @@ Majority of discord bots do not provide support for Youtube videos. The goal was
 ### Build and run
 
 1. Clone this repository.
-2. Change **base_dir**, **port_number**, and **ROOM_PASSWORD** accordingly to your needs.
+2. Change `base_dir`, `port_number`, and `ROOM_PASSWORD` accordingly to your needs.
 3. Build the project using your preferred IDE.
 4. Run compiled executable.
 5. Open your browser and go to `http://localhost:{port_number}`.
