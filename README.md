@@ -2,6 +2,8 @@
 
 A lightweight, real-time web application that allows users to watch and listen to Youtube videos in sync
 
+<img width="1630" height="879" alt="lachooons-main-png" src="https://github.com/user-attachments/assets/6d1cf1b0-78d9-4e85-9635-46d77704636b" />
+
 ## Why was it created?
 
 Majority of discord bots do not provide support for Youtube videos. The goal was to create an app that would - at least to some extent - replace them with **something**, that plays **exactly** what users want them to.
